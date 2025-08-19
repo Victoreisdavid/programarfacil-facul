@@ -15,7 +15,7 @@ body {
     border: 0;
 
     background-color: var(--white);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .navbar {
@@ -26,9 +26,11 @@ body {
     width: 100%;
     min-height: 30px;
 
-    background-color: #ffff;
+    background-color:#dde8eefb;
     box-shadow: -4px 5px 20px 0px #00000012;
     padding: 5px 50px;
+
+    box-sizing: border-box;
 }
 
 .navbar p {
@@ -58,10 +60,34 @@ body {
     display: flex;
     gap: 8px;
     align-items: center;
+    border-radius:50%;
+    justify-content: center;
     
     justify-self: end;
 
     width: 40px;
-    height: 30px;
+    height: 40px;
     border: 1px solid black;
+    padding: 0;
+    margin-left: auto;
+    
+}
+.home {
+    display: flex;
+    gap: 50px; /* Espaço entre os itens */
+    justify-content: center; /* Alinhamento horizontal do conteúdo */
+    
+    background-color:#FEF9FF;
+    box-sizing: border-box; 
+
+    margin-top: 4rem; /* espaçamento externo no elemento (pra fora) */
+    padding: 15px; /* espaçamento interno no elemento (pra dentro) */
+
+}
+
+.frase{
+    max-width: 700px;
+
+    margin-left: 20px;
+    font-size: 1.8em;
 }
