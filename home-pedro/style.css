@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    background-color: aliceblue;
+    padding: 5px;
+    padding-left: 15px;
+    display: flex; /*Ele faz o alinhamento horizontal do conteudo da div*/
+    align-items: center;
+}
+p{
+    margin-left: 25px;
+    font-size: larger;
+}
+.highlight{
+    color:#736CED ;
+}
+#search-container{
+    display: flex;
+    margin-left: 25%;
+    align-items: stretch; /* deixa todos os itens do conteudo na mesma altura do maior item */
+}
+#search{
+    background-color: rgb(225, 225, 225);
+    width: 280px;
+    height: 25px;
+    border: none;
+}
+#mag{
+     background-color: rgb(225, 225, 225);
+    
+    
+
+}
+
+#cart{
+    margin-left: 420px;
+    width: 20px;
+    height: 20px;
+}
+#letter{
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;  
+}
+#not{
+  margin-left: 15px;
+  width: 20px;
+  height: 20px; 
+}
