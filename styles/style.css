@@ -16,10 +16,14 @@ p{
 .highlight{
     color:#736CED ;
 }
+
 #search-container{
+    position: absolute;
     display: flex;
-    margin-left: 25%;
     align-items: stretch; /* deixa todos os itens do conteudo na mesma altura do maior item */
+
+    left: 50%;
+    transform: translateX(-50%);
 }
 #search{
     background-color: rgb(225, 225, 225);
@@ -28,24 +32,27 @@ p{
     border: none;
 }
 #mag{
-     background-color: rgb(225, 225, 225);
-    
-    
-
+    background-color: rgb(225, 225, 225);
 }
 
 #cart{
-    margin-left: 420px;
     width: 20px;
     height: 20px;
 }
 #letter{
-  margin-left: 15px;
   width: 20px;
   height: 20px;  
 }
 #not{
-  margin-left: 15px;
   width: 20px;
   height: 20px; 
 }
+
+.nav-bar-images {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+    gap: 1rem;
+}
+
