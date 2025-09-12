@@ -47,6 +47,11 @@ p{
   width: 20px;
   height: 20px; 
 }
+#user{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
 
 .nav-bar-images {
     display: flex;
@@ -56,3 +61,93 @@ p{
     gap: 1rem;
 }
 
+.home-container {
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+
+    gap: 1.5rem;
+
+    width: fit-content;
+    margin: auto;
+
+    background-color: #dff7fd;
+}
+
+.home-container .text {
+    width: 36%;
+}
+
+.home-container .searchbar {
+    position: absolute;
+    display: flex;
+
+    justify-content: space-around;
+    
+    background-color: white;
+    width: 75%;
+
+    padding: 8px 8px;
+
+    transform: translateY(16rem);
+
+    color: rgb(225, 225, 225);
+    border-radius: 6px;
+}
+
+.home-container .searchbar input[type=text] {
+    width: 75%;
+    
+    background-color: transparent;
+    border: none;
+
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.home-container .searchbar input[type=text]:focus {
+    outline: 1px solid rgb(67, 66, 66);
+}
+
+.home-container .searchbar input[type=text]::placeholder {
+    color: rgb(225, 225, 225);
+}
+
+.home-container .searchbar .btn {
+    background-color: #736CED;
+    color: white;
+
+    border-radius: 10px;
+
+    border: 0;
+    font-size: 1.05em;
+}
+
+#curso1{
+    flex-wrap: wrap;
+    margin-top: 10px;
+  display: flex;
+  margin-left: 35px;
+  gap: 30px;
+}
+#curso2{
+    flex-wrap: wrap;
+    margin-top: 10px;
+  display: flex;
+  margin-left: 35px;
+  gap: 30px;
+}
+#curso3{
+    flex-wrap: wrap;
+    margin-top: 10px;
+  display: flex;
+  margin-left: 35px;
+  gap: 30px;
+}
+
+#footer{
+    background-color: #00171f;
+    margin-top: 85px;
+    width: 100%px;
+    height: 400px;
+}
