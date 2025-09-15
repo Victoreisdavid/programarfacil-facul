@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-top: 3rem;
+}
+
+.header .text {
+    max-width: 450px;
+}
+
+.header .text h1 {
+    font-size: 1.6em;
+}
+
+.header .text p {
+    color: rgb(55, 55, 55);
+}
+
