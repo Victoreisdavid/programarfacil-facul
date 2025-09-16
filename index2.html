@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/index2.css">
     <title>Home</title>
 </head>
 <body>
@@ -22,94 +23,68 @@
     </div>
     <main class="home-container">
         <div class="text">
-            <h1>Programar não é difícil. Difícil é ter tempo — e é por isso que criamos uma plataforma feita pra você.</h1>
+            <h1>Todos os cursos.</h1>
+            <p>Vamos aprender os tutoriais mais úteis do mundo e crescer juntos....</p>
         </div>
         <img src="img/programmer2.svg" alt="" width="400" height="400">
-        <div class="searchbar">
-            <input type="text" placeholder="Pesquise um curso" />
-            <button class="btn">
-                Pesquisar
-            </button>
-        </div>
     </main>
     <main>
-
-        
-        <p> Novos Cursos</p>
-        <div  id="curso1" class="cursos">
-
-            <div>
-                <img src="img/thumb_python.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#1 Curso de python</p>
-
+        <div class="courses">
+            <div class="courses_nav">
+                <p>Filtrar cursos</p>
+                <div class="courses_nav_content">
+                    <input placeholder="Pesquise um curso pelo nome" class="search" type="text" />
+                    <div class="courses_nav_checkboxes">
+                        <p>Categorias</p>
+                        <div class="item">
+                            <input type="checkbox" id="python" />
+                            <label for="python">Python</label>
+                        </div>
+                         <div class="item">
+                            <input type="checkbox" id="php" />
+                            <label for="php">PHP</label>
+                        </div>
+                         <div class="item">
+                            <input type="checkbox" id="db" />
+                            <label for="db">Banco de dados</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="webdev" />
+                            <label for="webdev">Desenvolvimento Web.</label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="img/thumb_python2.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#2 Curso de python</p>
-
-            </div>
-            <div>
-               <img src="img/thumb_python3.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#3 Curso de python</p>
-
-            </div>
-        
-            <div>
-               <img src="img/thumb_python4.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#4 Curso de python</p>
-
+            <div class="courses_content">
+                <p>Cursos</p>
+                <div id="curso1" class="cursos">
+                    <div>
+                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
+                        <p class="texto-curso">#1 Curso de python</p>
+                    </div>
+                    <div>
+                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
+                        <p class="texto-curso">#1 Curso de python</p>
+                    </div>
+                    <div>
+                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
+                        <p class="texto-curso">#1 Curso de python</p>
+                    </div>
+                    <div>
+                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
+                        <p class="texto-curso">#1 Curso de python</p>
+                    </div>
+                    <div>
+                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
+                        <p class="texto-curso">#1 Curso de python</p>
+                    </div>
+                    <div>
+                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
+                        <p class="texto-curso">#1 Curso de python</p>
+                    </div>
+                </div>
             </div>
         </div>
-            <p>Cursos Populares</p>
-        <div  id="curso2" class="cursos">
-
-            <div>
-                <img src="img/thumb_python.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#1 Curso em C</p>
-
-            </div>
-          
-            <div>
-                <img src="img/thumb_python2.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#2 Curso em C.</p>
-
-            </div>
-            <div>
-               <img src="img/thumb_python3.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#3 Curso em C.</p>
-
-            </div>
-            <div>
-               <img src="img/thumb_python4.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#4 Curso em C.</p>
-
-            </div>
-        </div>
-        <p>Curso Banco de Dados</p>
-        <div  id="curso3" class="cursos">
-
-            <div>
-                <img src="img/thumb_python.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#1 Curso de SQL.</p>
-
-            </div>
-            <div>
-                <img src="img/thumb_python2.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#2 Curso de SQL.</p>
-
-            </div>
-            <div>
-               <img src="img/thumb_python3.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#3 Curso de SQL.</p>
-
-            </div>
-            <div>
-               <img src="img/thumb_python4.jpeg" alt="" class="aulas">
-                <p class="texto-curso">#4 Curso de SQL.</p>
-
-            </div>
-        </div> 
-
     </main>
     <main>
        <footer>
