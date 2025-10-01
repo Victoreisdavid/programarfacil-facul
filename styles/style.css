@@ -1,9 +1,10 @@
 body{
     margin: 0;
     padding: 0;
+   
 }
 .nav-bar{
-    background-color: aliceblue;
+    background-color: rgb(230, 240, 249);
     padding: 5px;
     padding-left: 15px;
     display: flex; /*Ele faz o alinhamento horizontal do conteudo da div*/
@@ -59,19 +60,26 @@ p{
 
     margin-left: auto;
     gap: 1rem;
+    transition: 0.4s;
 }
+.nav-bar-images:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+   
+}
+
 
 .home-container {
     display: flex;
     align-items: normal;
-    justify-content: center;
+    justify-content: space-around;
 
     gap: 1.5rem;
 
     width: fit-content;
     margin: auto;
-
-    background-color: #dff7fd;
+    margin-bottom: 20px;
+    background-color: #c8edf6;
 }
 
 .home-container .text {
@@ -122,15 +130,23 @@ p{
     border: 0;
     font-size: 1.05em;
 }
+
+.text h1{
+   padding: 35px;
+   margin-right: 50px;
+}
 .cursos{
- flex-wrap: wrap;
-   
+  flex-wrap: wrap;
+  margin-top:15px ;
   display: flex;
-  margin-left: 35px;
+  margin-left:80px;
   gap: 30px;
+  margin-bottom: 40px;
 
 }
-
+.texto-curso{
+    margin-bottom: 20px;
+}
 #footer{
     background-color: #00171f;
     margin-top: 85px;
@@ -139,9 +155,14 @@ p{
 }
 
 .aulas{
-   
-    box-shadow: 5px 10px 20px  red;
+     box-shadow: 5px 10px 20px  rgb(97, 88, 88);
+     transition: 0.4s;
+}
 
+.aulas:hover{
+   opacity: 0.9;
+   width: 350px;
+   height: 200px;
 }
 
 .texto-curso{
@@ -184,19 +205,118 @@ footer{
     margin-bottom: 0.75rem;
 }
 
-#footer-social-media{
+#footer-social{
       display: flex;
       gap: 2rem;
       margin-top: 1.5rem;
 }
 
-#footer-social-media .footer-link{
-   height: 2.5rem;
+#footer-social .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
     width: 2.5rem;
     color: var(--color-neutral-40);
     border-radius: 50%;
+    text-decoration: none;
+    transition: 0.4s;
 
 }
+#footer-social .footer-link i{
+    font-size: 1.25rem;
+}
+
+#footer-social .footer-link:hover{
+    opacity: 0.8;
+   
+
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9,#ff2992,#ff9807);
+
+}
+#facebook{
+    background-color: #4267b3;
+}
+#telefone{
+    background-color: darkgreen;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    
+
+}
+.footer-list .footer-link{
+    color: var(--color-neutral-20);
+    transition: all 0.4s;
+    text-decoration: none;
+}
+.footer-list .footer-link:hover{
+    color: #7f37c9;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer_subscribe p{
+    color:  var(--color-neutral-20);
+}
+#input_group{
+    display:flex;
+    align-items: center;
+    background-color: #a8a29e;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+#input_group button{
+    background-color:#7f37c9 ;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+
+}
+
 #footer_copyright{
-    background-color: #0e0c0c;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+}
+@media screen and (max-width: 426px) {
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        gap:3rem 2rem;
+    }
+    
 }
