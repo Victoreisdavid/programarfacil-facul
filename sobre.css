@@ -1,0 +1,114 @@
+.sobre-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.sobre-container h1 {
+    text-align: center;
+    color: #736CED;
+    margin-bottom: 20px;
+}
+
+.sobre-container h2 {
+    color: #736CED;
+    margin-top: 30px;
+}
+
+.sobre-container p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.sobre-container ul {
+    list-style: disc inside;
+    margin-top: 10px;
+}
+
+footer{
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+#footer-content{
+    background-color: var(--color-fundo);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}   
+
+
+#footer-contact h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer-social{
+      display: flex;
+      gap: 2rem;
+      margin-top: 1.5rem;
+}
+
+#footer-social .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.4s;
+
+}
+#footer-social .footer-link i{
+    font-size: 1.25rem;
+}
+
+#footer-social .footer-link:hover{
+    opacity: 0.8;
+   
+
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9,#ff2992,#ff9807);
+
+}
+#facebook{
+    background-color: #4267b3;
+}
+#telefone{
+    background-color: darkgreen;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+    
+
+}
+.footer-list .footer-link{
+    color: var(--color-neutral-20);
+    transition: all 0.4s;
+    text-decoration: none;
+}
+.footer-list .footer-link:hover{
+    color: #7f37c9;
+}
+
+#footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer_subscribe p{
+    color:  var(--color-neutral-20);
+}
+
+#sobre-li{
+    margin-top: 25px;
+}

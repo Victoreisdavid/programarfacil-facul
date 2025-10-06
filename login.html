@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/login2.css">
-    <title>Programar</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=""width=device-width, inicial-scale="1.0">
+        <link rel="stylesheet" href="styles/login2.css">
+        <title> Programar Fácil - Login </title>
+    </head>
 
-
- </head>
 <body>
-    <div id="cabecalho">
+    <header id="cabecalho">
         <div class="circle_container_mask"></div>
         <div id="content">
             <h1>LOGIN</h1>
-            <form>
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
+            <form action="/" method="get">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu email:">
+                <input type="password" name="senha" id="senha" required placeholder="Digite sua senha:">
                 <button>Login</button>
-                <button> Cadastre-se </button>
+                <button>Cadastre-se</button>
             </form>
         </div>
-    </div>
+    </header>
 
-    <div>
-        <div id="cabecalho 2">
-            <h2>Seja aluno do programar facil</h2>
-            <p>São mais de mil cursos para ajudar a construir sua carreira como programador nas seguintes àreasdiv</p>
-        </div>
-        <div id="categorias">
-            <div class="categoria">
-                <img src="" alt="">
-                <h2>Desenvolvimento web</h2>
-            </div>
+    <main id="grupo">
+        <section id="cabecalho2">
+            <h2>Seja aluno do Programar Fácil</h2>
+            <p>São mais de mil cursos para ajudar a construir sua carreira como programador nas seguintes áreas:</p>
+        </section>
 
-            <div class="categoria">
-                <img src="" alt="">
-                <h2>Algoritmos e Lógica de Programação</h2>
-            </div>
-            
-            <div class="categoria">
-                <img src="" alt="">
-                <h2>Inteligência Artificial</h2>
-            </div>
+        <section id="categorias">
+            <ul>
+                <li class="categoria">
+                    <img src="/img/window-dev.svg" alt="">
+                    <h3>Desenvolvimento Web</h3>
+                </li>
 
-            <div class="categoria">
-                <img src="" alt="">
-                <h2>Banco de dados</h2>
-            </div>
-        </div>
+                <li class="categoria">
+                    <img src="img/atom-svgrepo-com.svg" alt="">
+                    <h3>Algoritmos e Lógica de Programação</h3>
+                </li>
+
+                <li class="categoria">
+                    <img src="img/ai-svgrepo-com.svg" alt="">
+                    <h3>Inteligência Artificial</h3>
+                </li>
+
+                <li class="categoria">
+                    <img src="img/data-science-solid-svgrepo-com.svg" alt="">
+                    <h3>Banco de Dados</h3>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
+

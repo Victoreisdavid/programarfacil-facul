@@ -10,16 +10,23 @@
 </head>
 <body>
     <div class="nav-bar">
-        <img src="/img/Logo.svg" alt="logo" width="62" height="48">
+        <img src="./img/Logo.svg" alt="logo" width="62" height="48">
         <p>Programar<span class="highlight">Fácil</span></p>
-        <div id="search-container"><img src="/img/search-svgrepo-com.svg" alt="" id="mag" width="20"> <input type="text" placeholder="Pesquise o curso que deseja." id="search"></div> 
+        <div id="search-container"><img src="./img/search-svgrepo-com.svg" alt="" id="mag" width="20"> <input type="text" placeholder="Pesquise o curso que deseja." id="search"></div> 
         
         <div class="nav-bar-images">
-            <img src="/img/cart-shopping-fast-svgrepo-com.svg" alt="" id="cart" >
-            <img src="/img/letter-unread-svgrepo-com.svg"  alt="" id="letter">
-            <img src="/img/notification-svgrepo-com.svg" alt="" id="not" >
-            <img src="/img/user-circle-svgrepo-com.svg" alt="" id="user" width="20" height="20">
+            <img src="./img/letter-unread-svgrepo-com.svg"  alt="" id="letter" class="imgs">
+            <img src="./img/notification-svgrepo-com.svg" alt="" id="not" class="imgs"  >
         </div>
+        <div class="user-menu">
+            <img src="./img/user-circle-svgrepo-com.svg" alt="Usuário" id="user" class="imgs">
+            <div class="menu-dropdown" id="menuDropdown">
+                <a href="index.html">Início</a>
+                <a href="courses.html">Todos os Cursos</a>
+                <a href="login.html">Sair</a>
+            </div>
+        </div>
+    </div>
     </div>
     <main class="home-container" style="align-items: center; padding: 12px;">
         <div class="home-container-text">
@@ -59,92 +66,80 @@
                 <p>Cursos</p>
                 <div id="curso1" class="cursos">
                     <div>
-                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
-                        <p class="texto-curso">#1 Curso de python</p>
+                        <a href="https://www.youtube.com/watch?v=TfsO0BGvGn0&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_" target="_blank" rel="noopener noreferrer">
+                        <img src="img/php.jpeg" width="300" alt="" class="aulas">
+                        <p class="texto-curso">Curso de PhP</p>
+                        </a>
                     </div>
                     <div>
-                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
-                        <p class="texto-curso">#1 Curso de python</p>
+                        <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0">
+                        <img src="img/python.png" alt="" width="300" class="aulas">
+                        <p class="texto-curso">Curso de Python</p>
+                        </a>
                     </div>
                     <div>
-                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
-                        <p class="texto-curso">#1 Curso de python</p>
+                        <a href="https://www.youtube.com/watch?v=jQMbuK6URws&list=PLHz_AreHm4dm24MhlWJYiR_Rm7TFtvs6S">
+                        <img src="img/IA.jpeg" alt="" width="300" class="aulas">
+                        <p class="texto-curso">Curso de IA</p>
                     </div>
                     <div>
-                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
-                        <p class="texto-curso">#1 Curso de python</p>
+                        <a href="https://www.youtube.com/watch?v=Ofktsne-utM&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r">
+                        <img src="img/db.jpeg" alt="" width="300" class="aulas">
+                        <p class="texto-curso">Banco de dados</p>
+                        </a>
                     </div>
                     <div>
-                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
-                        <p class="texto-curso">#1 Curso de python</p>
+                        <a href="https://www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR">
+                        <img src="img/java.jpeg" width="300" alt="" class="aulas">
+                        <p class="texto-curso">Curso de Java</p>
+                        </a>
                     </div>
                     <div>
-                        <img src="img/thumb_python.jpeg" alt="" class="aulas">
-                        <p class="texto-curso">#1 Curso de python</p>
+                        <a href="https://www.youtube.com/watch?v=nUQKr-ey86Y&list=PLx4x_zx8csUjczg1qPHavU1vw1IkBcm40">
+                        <img src="img/cpp.png" width="300" alt="" class="aulas">
+                        <p class="texto-curso">Curso de C++</p>
+                        </a>
                     </div>
+
+                    
                 </div>
             </div>
         </div>
     </main>
     <main>
        <footer>
+         
         <div id="footer-content"> 
             <div id="footer-contact">
                 <h1>ProgramarFácil</h1>
                 <p>É tudo sobre seus sonhos.</p>
-                <div>
-                    <a href="#" class="footer-link" id="instagram">
+                <div id="footer-social">
+                    <a href="https://www.instagram.com/" class="footer-link" id="instagram" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#" class="footer-link" id="facebook">
+                    <a href="https://www.facebook.com/" class="footer-link" id="facebook" target="_blank">
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="footer-link" id="telefone">
+                    <a href="tel:+5541999999999" class="footer-link" id="telefone" target="_blank">
                         <i class="fa-solid fa-phone"></i>
                     </a>
                 </div>
             </div>
 
-            <ul class="footer-list">
-                <li>
-                    <h3>
-                        Blog
-                    </h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link"> Inicio</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link"> Carreira</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link"> Contato</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link"> Cursos</a>
-                </li>
-            </ul>
-
-            <ul class="footer-list">
-                <li>
-                    <h3>
-                      Suporte
-                    </h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link"> Contato</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link"> Guia de compra</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link"> Termos de uso</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link"> Politica de privacidade</a>
-                </li>
-            </ul>
-
+        <ul class="footer-list">
+            <li><h3>Navegação</h3></li>
+            <li><a href="home.html" class="footer-link">Início</a></li>
+            <li><a href="courses.html" class="footer-link">Cursos</a></li>
+            <li><a href="sobre.html" class="footer-link">Sobre nós</a></li>
+            <li><a href="https://www.instagram.com/" class="footer-link">Contato</a></li>
+        </ul>
+           <ul class="footer-list">
+            <li><h3>Suporte</h3></li>
+            <li><a href="#" class="footer-link">FAQ</a></li>
+            <li><a href="#" class="footer-link">Termos de Uso</a></li>
+            <li><a href="#" class="footer-link">Política de Privacidade</a></li>
+            <li><a href="#" class="footer-link">Suporte</a></li>
+           </ul>
             <div id="footer_subscribe">
                 <h3>Subscribe</h3>
 
@@ -159,9 +154,7 @@
                 </div>
             </div>
         </div>
-        <div id="footer_copyright">
-            &#169 2025 reserva de todos os direitos.
-        </div>
+       
     </footer>
     </main>
     
@@ -171,6 +164,22 @@
     
 
 </html>
+<script>
+  const userIcon = document.getElementById('user');
+  const menuDropdown = document.getElementById('menuDropdown');
+
+  
+  userIcon.addEventListener('click', () => {
+    menuDropdown.style.display = menuDropdown.style.display === 'block' ? 'none' : 'block';
+  });
+
+  
+  window.addEventListener('click', (event) => {
+    if (!event.target.closest('.user-menu')) {
+      menuDropdown.style.display = 'none';
+    }
+  });
+</script>
     
      
             

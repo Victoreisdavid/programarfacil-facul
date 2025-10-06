@@ -36,10 +36,6 @@ p{
     background-color: rgb(225, 225, 225);
 }
 
-#cart{
-    width: 20px;
-    height: 20px;
-}
 #letter{
   width: 20px;
   height: 20px;  
@@ -49,8 +45,8 @@ p{
   height: 20px; 
 }
 #user{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     margin-right: 20px;
 }
 
@@ -60,12 +56,48 @@ p{
 
     margin-left: auto;
     gap: 1rem;
-    transition: 0.4s;
+    
 }
-.nav-bar-images:hover {
-    opacity: 0.8;
-    transform: scale(1.1);
-   
+
+
+.imgs{
+  transition: 0.4s;  
+}
+
+.imgs:hover{
+opacity: 0.8;
+transform: scale(1.1);
+}
+.user-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.menu-dropdown {
+  display: none; /* inicia escondido */
+  position: absolute;
+  right: 0;
+  top: 40px; /* abaixo do ícone */
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.menu-dropdown a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.menu-dropdown a:hover {
+  background-color: #f0f0f0;
+  color: #736CED;
 }
 
 
@@ -323,4 +355,8 @@ footer{
         gap:3rem 2rem;
     }
     
+}
+
+#site-container {
+    min-height: 70vh;
 }
