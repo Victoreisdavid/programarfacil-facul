@@ -77,8 +77,6 @@ body {
   box-shadow: 0 4px 15px rgba(115, 108, 237, 0.2);
 }
 
-/* === FOOTER (copiado igual) === */
-
 footer {
     width: 100%;
     background-color:#0f1922; 
@@ -231,7 +229,6 @@ footer {
 #input_group button:hover {
     background-color: #8a3ec2;
 }
-
 @media (max-width: 768px) {
     #footer-content {
         flex-direction: column;

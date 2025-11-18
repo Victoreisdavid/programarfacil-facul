@@ -1,0 +1,61 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    padding: 12px;
+
+    gap: 1rem;
+}
+
+.cards .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 530px;
+
+    gap: 0.5rem;
+    padding: 10px;
+
+    background-color: #fdfdfd;
+    box-shadow: 0 0 1px black;
+}
+
+.cards .card .target {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .card .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+
+    gap: 0.5rem;
+}
+
+.cards .card .about p {
+    font-size: 1em;
+}
+
+.cards .card .about .name {
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.cards .card .about .cta {
+    background-color: #8792f2;
+    border-radius: 12px;
+
+    padding: 8px 35px;
+    text-decoration: none;
+
+    color: white;
+
+    margin-top: auto;
+}

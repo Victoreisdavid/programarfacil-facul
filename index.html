@@ -1,60 +1,40 @@
 <!DOCTYPE html>
-
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProgramarFacil</title>
+    <title>ProgramarFácil</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="/styles/home.css" />
-     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
     <div class="nav-bar">
-        <img src="./img/Logo.svg" alt="logo" width="62" height="48">
+        <img src="./img/Logo.svg" alt="Logo ProgramarFácil" width="62" height="48">
         <p>Programar<span class="highlight">Fácil</span></p>
-        <div id="search-container"><img src="./img/search-svgrepo-com.svg" alt="" id="mag" width="20"> <input type="text" placeholder="Pesquise o curso que deseja." id="search"></div> 
-        
-        <div class="nav-bar-images">
-            <img src="./img/letter-unread-svgrepo-com.svg"  alt="" id="letter" class="imgs">
-            <img src="./img/notification-svgrepo-com.svg" alt="" id="not" class="imgs"  >
-        </div>
-        <div class="user-menu">
-            <img src="./img/user-circle-svgrepo-com.svg" alt="Usuário" id="user" class="imgs">
-            <div class="menu-dropdown" id="menuDropdown">
-                <a href="index.html">Início</a>
-                <a href="courses.html">Todos os Cursos</a>
-                <a href="login.html">Sair</a>
-            </div>
-        </div>
     </div>
+
+    <!-- HEADER / HERO -->
     <header class="header">
         <div class="text">
             <h1>Aprenda novas habilidades, em qualquer momento.</h1>
             <p>Cursos cobrindo a área de desenvolvimento de software direcionados diretamente para micro-estudos.</p>
+
             <div class="ctas">
-                <a href="/home.html" class="cta">Acessar cursos</a>
+                <a href="login.html" class="cta">Acessar cursos</a>
             </div>
         </div>
-        <img src="/img/programmer2.svg" width="300" height="300" alt="" />
+
+        <img src="/img/programmer2.svg" 
+             width="300" 
+             height="300" 
+             alt="Ilustração programador">
     </header>
+    
+
 </body>
-
-<script>
-  const userIcon = document.getElementById('user');
-  const menuDropdown = document.getElementById('menuDropdown');
-
-  
-  userIcon.addEventListener('click', () => {
-    menuDropdown.style.display = menuDropdown.style.display === 'block' ? 'none' : 'block';
-  });
-
-  
-  window.addEventListener('click', (event) => {
-    if (!event.target.closest('.user-menu')) {
-      menuDropdown.style.display = 'none';
-    }
-  });
-</script>
 </html>

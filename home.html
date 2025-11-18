@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/cards.css">
+
+    <script src="/js/courses.js"></script>
     <title>Home</title>
 </head>
 <body>
     <div class="nav-bar">
         <img src="./img/Logo.svg" alt="logo" width="62" height="48">
         <p>Programar<span class="highlight">Fácil</span></p>
-        <div id="search-container"><img src="./img/search-svgrepo-com.svg" alt="" id="mag" width="20"> <input type="text" placeholder="Pesquise o curso que deseja." id="search"></div> 
+
+        <div id="search-container">
+            <img src="./img/search-svgrepo-com.svg" alt="" id="mag" width="20">
+            <input type="text" placeholder="Pesquise o curso que deseja." id="search">
+        </div> 
         
         <div class="nav-bar-images">
-            <img src="./img/letter-unread-svgrepo-com.svg"  alt="" id="letter" class="imgs">
-            <img src="./img/notification-svgrepo-com.svg" alt="" id="not" class="imgs"  >
+            <div class="icon-container">
+                <img src="./img/letter-unread-svgrepo-com.svg"  alt="Mensagens" id="letter" class="imgs" role="button" aria-label="Mensagens">
+                <span class="badge" id="msgBadge" title="1 mensagem não lida"></span>
+            </div>
+
+            <div class="icon-container">
+                <img src="./img/notification-svgrepo-com.svg" alt="Notificações" id="not" class="imgs" role="button" aria-label="Notificações">
+                <span class="badge" id="notBadge" title="3 notificações"></span>
+            </div>
         </div>
+
         <div class="user-menu">
-            <img src="./img/user-circle-svgrepo-com.svg" alt="Usuário" id="user" class="imgs">
+            <img src="./img/user-circle-svgrepo-com.svg" alt="Usuário" id="user" class="imgs" role="button" aria-label="Menu do usuário">
             <div class="menu-dropdown" id="menuDropdown">
                 <a href="index.html">Início</a>
                 <a href="courses.html">Todos os Cursos</a>
@@ -26,112 +44,61 @@
             </div>
         </div>
     </div>
+
+    <!-- Dropdowns (separados) -->
+    <div class="dropdown-box" id="msgBox" aria-live="polite" role="region" aria-label="Mensagens">
+        <h4>Mensagens</h4>
+        <div class="item">
+            <strong>Professor</strong>
+            <p class="small">Você possui 1 mensagem não lida.</p>
+        </div>
+        <div class="dropdown-actions">
+            <button id="markAllRead" class="link-btn">Marcar como lida</button>
+        </div>
+    </div>
+
+    <div class="dropdown-box" id="notBox" aria-live="polite" role="region" aria-label="Notificações">
+        <h4>Notificações</h4>
+        <div class="item">🔔 <span class="notif-text">Novo curso: HTML5 completo!</span></div>
+        <div class="item">🎉 <span class="notif-text">Promoção nos cursos de Python!</span></div>
+        <div class="item">⚙️ <span class="notif-text">Atualizamos sua conta.</span></div>
+        <div class="dropdown-actions">
+            <button id="clearNotifs" class="link-btn">Limpar notificações</button>
+        </div>
+    </div>
+
     <main class="home-container">
         <div class="text">
             <h1>Programar não é difícil. Difícil é ter tempo — e é por isso que criamos uma plataforma feita pra você.</h1>
         </div>
         <img src="img/programmer2.svg" alt="" width="400" height="400">
         <div class="searchbar">
-            <input type="text" placeholder="Pesquise um curso" />
-            <button class="btn">
-                Pesquisar
-            </button>
+            <input type="text" placeholder="Pesquise um curso" id="mainSearch" />
+            <button class="btn" id="searchBtn">Pesquisar</button>
         </div>
     </main>
-    <main>
 
-        
-        <p> Novos Cursos</p>
-        <div  id="curso1" class="cursos">
+    <main id="courses">
+        <p>Cursos básicos</p>
+        <!-- O javascript injetará o HTML dos cursos aqui -->
+        <div class="courses-inject">
 
-            <div>
-                <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" target="_blank">
-                <img src="img/python.png" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#1 Curso de python</p>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/watch?v=Mp0vhMDI7fA&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=3" target="_blank">
-                <img src="img/python.png" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#2 Curso de python</p>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/watch?v=VuKvR1J2LQE&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=4" target="_blank">
-                <img src="img/python.png" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#3 Curso de python</p>
-                </a>
-            </div>
-        
-            <div>   
-                <a href="https://www.youtube.com/watch?v=31llNGKWDdo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=5" target="_blank">
-               <img src="img/python.png" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#4 Curso de python</p>
-                </a>
-            </div>
         </div>
-            <p>Cursos Populares</p>
-        <div  id="curso2" class="cursos">
-
-            <div>
-                <a href="https://www.youtube.com/watch?v=8mei6uVttho&list=PL21rh82DRnmobAWFir6DxPuTOa82myc8_" target="_blank">
-                <img src="img/cpp.png" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#1 Curso em C</p>
-                </a>
-            </div>
-          
-            <div>
-                <a href="https://www.youtube.com/watch?v=M2Af7gkbbro&list=PL21rh82DRnmobAWFir6DxPuTOa82myc8_&index=2" target="_blank">
-               <img src="img/cpp.png" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#2 Curso em C.</p>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/watch?v=RDrfZ-7WE8c&list=PL21rh82DRnmobAWFir6DxPuTOa82myc8_&index=3" target="_blank">
-               <img src="img/cpp.png" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#3 Curso em C.</p>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/watch?v=Ig4QZNpVZYs&list=PL21rh82DRnmobAWFir6DxPuTOa82myc8_&index=4" target="_blank">
-                <img src="img/cpp.png" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#4 Curso em C.</p>
-                </a>
-            </div>
-        </div>
-        <p>Curso Banco de Dados</p>
-        <div  id="curso3" class="cursos">
-
-            <div>
-                <a href="https://www.youtube.com/watch?v=Ofktsne-utM&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r" target="_blank">
-                <img src="img/db.jpeg" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#1 Curso de MYSQL.</p>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/watch?v=5JbAOWJbgIA&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r&index=2" target="_blank">
-                <img src="img/db.jpeg" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#2a Curso de MYSQL.</p>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/watch?v=R2HrwSQ6EPM&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r&index=3" target="_blank">
-                <img src="img/db.jpeg" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#2b Curso de MYSQL.</p>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/watch?v=m9YPlX0fcJk&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r&index=4" target="_blank">
-                <img src="img/db.jpeg" alt="" class="aulas" width="316" height="188">
-                <p class="texto-curso">#3 Curso de MYSQL.</p>
-                </a>
-            </div>
-        </div> 
-
     </main>
+
+    <script>
+        const searchElement = document.querySelector(".home-container .searchbar #mainSearch")
+        const searchButton = document.querySelector(".home-container .searchbar .btn")
+
+        searchButton.addEventListener("click", () => {
+            ListCourses("main#courses .courses-inject", searchElement.value || null)
+        })
+
+        ListCourses("main#courses .courses-inject", searchElement.value || null)
+    </script>
+
     <main>
-       <footer>
-         
+    <footer>
         <div id="footer-content"> 
             <div id="footer-contact">
                 <h1>ProgramarFácil</h1>
@@ -158,10 +125,10 @@
         </ul>
            <ul class="footer-list">
             <li><h3>Suporte</h3></li>
-            <li><a href="#" class="footer-link">FAQ</a></li>
-            <li><a href="#" class="footer-link">Termos de Uso</a></li>
-            <li><a href="#" class="footer-link">Política de Privacidade</a></li>
-            <li><a href="#" class="footer-link">Suporte</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ</a></li>
+            <li><a href="termo.html" class="footer-link">Termos de Uso</a></li>
+            <li><a href="privacidade.html" class="footer-link">Política de Privacidade</a></li>
+            <li><a href="https://www.instagram.com/" class="footer-link">Suporte</a></li>
            </ul>
             <div id="footer_subscribe">
                 <h3>Subscribe</h3>
@@ -171,41 +138,107 @@
                 </p>
                 <div id="input_group">
                     <input type="email" id="email">
-                    <button>
+                    <button id="subscribeBtn">
                         <i class="fa-regular fa-envelope"></i>
                     </button>
                 </div>
             </div>
         </div>
-       
     </footer>
     </main>
+
+    <!-- ====== JS: comportamento das notificações / mensagens / menu ====== -->
     <script>
-  const userIcon = document.getElementById('user');
-  const menuDropdown = document.getElementById('menuDropdown');
+        // elementos
+        const msgIcon = document.getElementById("letter");
+        const notIcon = document.getElementById("not");
+        const userIcon = document.getElementById("user");
 
-  
-  userIcon.addEventListener('click', () => {
-    menuDropdown.style.display = menuDropdown.style.display === 'block' ? 'none' : 'block';
-  });
+        const msgBox = document.getElementById("msgBox");
+        const notBox = document.getElementById("notBox");
+        const userMenu = document.getElementById("menuDropdown");
 
-  
-  window.addEventListener('click', (event) => {
-    if (!event.target.closest('.user-menu')) {
-      menuDropdown.style.display = 'none';
-    }
-  });
-</script>
+        const msgBadge = document.getElementById("msgBadge");
+        const notBadge = document.getElementById("notBadge");
 
-    
+        // função para esconder todos
+        function closeAll() {
+            if(msgBox) msgBox.style.display = "none";
+            if(notBox) notBox.style.display = "none";
+            if(userMenu) userMenu.style.display = "none";
+        }
 
+        // toggle mensagens
+        if (msgIcon) {
+            msgIcon.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const open = msgBox && msgBox.style.display === "block";
+                closeAll();
+                if(msgBox) msgBox.style.display = open ? "none" : "block";
+                if(msgBadge && !open) msgBadge.style.display = "none"; // marca lido ao abrir
+            });
+        }
 
-    
-    
-</body>
-</html>
-    
-     
-            
+        // toggle notificações
+        if (notIcon) {
+            notIcon.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const open = notBox && notBox.style.display === "block";
+                closeAll();
+                if(notBox) notBox.style.display = open ? "none" : "block";
+                if(notBadge && !open) notBadge.style.display = "none"; // esconde badge ao abrir
+            });
+        }
+
+        // toggle menu usuário
+        if (userIcon) {
+            userIcon.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const open = userMenu && userMenu.style.display === "block";
+                closeAll();
+                if(userMenu) userMenu.style.display = open ? "none" : "block";
+            });
+        }
+
+        // marcar mensagem como lida
+        const markBtn = document.getElementById("markAllRead");
+        if(markBtn){
+            markBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                if(msgBadge) msgBadge.style.display = "none";
+                if(msgBox) msgBox.style.display = "none";
+            });
+        }
+
+        // limpar notificações
+        const clearBtn = document.getElementById("clearNotifs");
+        if(clearBtn){
+            clearBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                if(notBadge) notBadge.style.display = "none";
+                // remove itens visíveis
+                if(notBox){
+                    const items = notBox.querySelectorAll('.item');
+                    items.forEach(it => it.remove());
+                    const p = document.createElement('p');
+                    p.className = 'small';
+                    p.textContent = 'Nenhuma notificação.';
+                    notBox.appendChild(p);
+                }
+            });
+        }
+
+        // fechar ao clicar fora
+        document.addEventListener("click", (e) => {
+            const clickedInside =
+                (msgBox && msgBox.contains(e.target)) ||
+                (notBox && notBox.contains(e.target)) ||
+                (userMenu && userMenu.contains(e.target)) ||
+                (msgIcon && msgIcon.contains(e.target)) ||
+                (notIcon && notIcon.contains(e.target)) ||
+                (userIcon && userIcon.contains(e.target));
+            if (!clickedInside) closeAll();
+        });
+    </script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+/* ======================
+   SEU CSS ORIGINAL
+   ====================== */
 body{
     margin: 0;
     padding: 0;
@@ -11,7 +14,6 @@ body{
     align-items: center;
 }
 p{
-    margin-left: 25px;
     font-size: larger;
 }
 .highlight{
@@ -360,3 +362,59 @@ footer{
 #site-container {
     min-height: 70vh;
 }
+
+/* ======================
+   MINHAS ADIÇÕES (BADGES e DROPDOWNS)
+   ====================== */
+
+/* garantir que o container do ícone seja relativo para posicionar badge */
+.icon-container { position: relative; display: inline-block; }
+
+/* badge pequena vermelha */
+.badge{
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 0 0 2px white;
+}
+
+/* estilo do dropdown (mensagens e notificações) */
+.dropdown-box{
+    display: none; /* começa escondido */
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    width: 320px;
+    max-width: calc(100% - 40px);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    padding: 12px;
+    z-index: 10000;
+}
+
+/* título/itens */
+.dropdown-box h4{ margin: 6px 0 10px 0; }
+.dropdown-box .item{ padding: 10px 8px; border-bottom: 1px solid #eee; }
+.dropdown-box .item:last-child{ border-bottom: none; }
+.dropdown-actions{ display: flex; justify-content: flex-end; margin-top: 8px; gap: 8px; }
+.link-btn{ background: none; border: none; color: #736CED; cursor: pointer; font-weight: 600; }
+.small{ font-size: 0.95rem; color: #666; margin-top: 6px; }
+
+/* animação */
+@keyframes fade {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* responsividade para dropdown */
+@media screen and (max-width: 768px) {
+    .dropdown-box{ right: 10px; left: 10px; width: auto; }
+}
+
+/* fim das adições */

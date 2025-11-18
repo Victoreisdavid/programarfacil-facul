@@ -6,18 +6,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/courses.css">
+    <link rel="stylesheet" href="/styles/cards.css">
+
+    <script src="/js/courses.js"></script>
     <title>Home</title>
 </head>
 <body>
+
     <div class="nav-bar">
         <img src="./img/Logo.svg" alt="logo" width="62" height="48">
         <p>Programar<span class="highlight">Fácil</span></p>
-        <div id="search-container"><img src="./img/search-svgrepo-com.svg" alt="" id="mag" width="20"> <input type="text" placeholder="Pesquise o curso que deseja." id="search"></div> 
-        
+
+        <div id="search-container">
+            <img src="./img/search-svgrepo-com.svg" alt="" id="mag" width="20">
+            <input type="text" placeholder="Pesquise o curso que deseja." id="search">
+        </div> 
+
         <div class="nav-bar-images">
             <img src="./img/letter-unread-svgrepo-com.svg"  alt="" id="letter" class="imgs">
-            <img src="./img/notification-svgrepo-com.svg" alt="" id="not" class="imgs"  >
+            <img src="./img/notification-svgrepo-com.svg" alt="" id="not" class="imgs">
         </div>
+
         <div class="user-menu">
             <img src="./img/user-circle-svgrepo-com.svg" alt="Usuário" id="user" class="imgs">
             <div class="menu-dropdown" id="menuDropdown">
@@ -27,7 +36,31 @@
             </div>
         </div>
     </div>
+
+    <!-- 🔵 CAIXA DE MENSAGENS -->
+    <div id="messageBox" class="floating-box">
+        <div class="close-btn" id="closeMessages">Fechar ✖</div>
+        <h3>Mensagens</h3>
+        <div class="notification">
+            <strong>Professor:</strong> Olá Aluno, lembre-se da tarefa de hoje!
+        </div>
+        <div class="notification">
+            <strong>Sistema:</strong> Seu curso de Python foi atualizado.
+        </div>
     </div>
+
+    <!-- 🔔 CAIXA DE NOTIFICAÇÕES -->
+    <div id="notificationBox" class="floating-box">
+        <div class="close-btn" id="closeNotifications">Fechar ✖</div>
+        <h3>Notificações</h3>
+        <div class="notification">
+            🔔 Novo curso disponível!
+        </div>
+        <div class="notification">
+            🔔 Promoção relâmpago nos cursos!
+        </div>
+    </div>
+
     <main class="home-container" style="align-items: center; padding: 12px;">
         <div class="home-container-text">
             <h1>Todos os cursos.</h1>
@@ -35,6 +68,7 @@
         </div>
         <img src="img/programmer2.svg" alt="" width="350" height="350">
     </main>
+
     <main>
         <div class="courses">
             <div class="courses_nav">
@@ -47,11 +81,11 @@
                             <input type="checkbox" id="python" />
                             <label for="python">Python</label>
                         </div>
-                         <div class="item">
+                        <div class="item">
                             <input type="checkbox" id="php" />
                             <label for="php">PHP</label>
                         </div>
-                         <div class="item">
+                        <div class="item">
                             <input type="checkbox" id="db" />
                             <label for="db">Banco de dados</label>
                         </div>
@@ -62,54 +96,34 @@
                     </div>
                 </div>
             </div>
+
             <div class="courses_content">
                 <p>Cursos</p>
-                <div id="curso1" class="cursos">
-                    <div>
-                        <a href="https://www.youtube.com/watch?v=TfsO0BGvGn0&list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_" target="_blank" rel="noopener noreferrer">
-                        <img src="img/php.jpeg" width="300" alt="" class="aulas">
-                        <p class="texto-curso">Curso de PhP</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0">
-                        <img src="img/python.png" alt="" width="300" class="aulas">
-                        <p class="texto-curso">Curso de Python</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/watch?v=jQMbuK6URws&list=PLHz_AreHm4dm24MhlWJYiR_Rm7TFtvs6S">
-                        <img src="img/IA.jpeg" alt="" width="300" class="aulas">
-                        <p class="texto-curso">Curso de IA</p>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/watch?v=Ofktsne-utM&list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r">
-                        <img src="img/db.jpeg" alt="" width="300" class="aulas">
-                        <p class="texto-curso">Banco de dados</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR">
-                        <img src="img/java.jpeg" width="300" alt="" class="aulas">
-                        <p class="texto-curso">Curso de Java</p>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://www.youtube.com/watch?v=nUQKr-ey86Y&list=PLx4x_zx8csUjczg1qPHavU1vw1IkBcm40">
-                        <img src="img/cpp.png" width="300" alt="" class="aulas">
-                        <p class="texto-curso">Curso de C++</p>
-                        </a>
-                    </div>
-
-                    
-                </div>
+                <div class="courses-inject"></div>
             </div>
         </div>
     </main>
-    <main>
-       <footer>
-         
-        <div id="footer-content"> 
+
+    <script>
+        const searchElement = document.querySelector("main .courses .courses_nav .courses_nav_content .search")
+
+        let timeout;
+
+        searchElement.addEventListener("input", () => {
+            if(timeout) {
+                clearTimeout(timeout)
+            }
+
+            setTimeout(() => {
+                ListCourses("main .courses .courses_content .courses-inject", searchElement.value || null)
+            }, 1500)
+        })
+
+        ListCourses("main .courses .courses_content .courses-inject", searchElement.value || null)
+    </script>
+
+    <footer>
+         <div id="footer-content"> 
             <div id="footer-contact">
                 <h1>ProgramarFácil</h1>
                 <p>É tudo sobre seus sonhos.</p>
@@ -135,10 +149,10 @@
         </ul>
            <ul class="footer-list">
             <li><h3>Suporte</h3></li>
-            <li><a href="#" class="footer-link">FAQ</a></li>
-            <li><a href="#" class="footer-link">Termos de Uso</a></li>
-            <li><a href="#" class="footer-link">Política de Privacidade</a></li>
-            <li><a href="#" class="footer-link">Suporte</a></li>
+            <li><a href="faq.html" class="footer-link">FAQ</a></li>
+            <li><a href="termo.html" class="footer-link">Termos de Uso</a></li>
+            <li><a href="privacidade.html" class="footer-link">Política de Privacidade</a></li>
+            <li><a href="https://www.instagram.com/" class="footer-link">Suporte</a></li>
            </ul>
             <div id="footer_subscribe">
                 <h3>Subscribe</h3>
@@ -148,40 +162,101 @@
                 </p>
                 <div id="input_group">
                     <input type="email" id="email">
-                    <button>
+                    <button id="subscribeBtn">
                         <i class="fa-regular fa-envelope"></i>
                     </button>
                 </div>
             </div>
         </div>
-       
     </footer>
-    </main>
-    
 
-
-    
-    
-
-</html>
 <script>
-  const userIcon = document.getElementById('user');
-  const menuDropdown = document.getElementById('menuDropdown');
+/* MENU DO USUÁRIO */
+const userIcon = document.getElementById('user');
+const menuDropdown = document.getElementById('menuDropdown');
 
-  
-  userIcon.addEventListener('click', () => {
-    menuDropdown.style.display = menuDropdown.style.display === 'block' ? 'none' : 'block';
-  });
+userIcon.addEventListener('click', () => {
+    menuDropdown.style.display =
+        menuDropdown.style.display === 'block' ? 'none' : 'block';
+});
 
-  
-  window.addEventListener('click', (event) => {
+window.addEventListener('click', (event) => {
     if (!event.target.closest('.user-menu')) {
-      menuDropdown.style.display = 'none';
+        menuDropdown.style.display = 'none';
     }
-  });
+});
+
+/* 🔵 CAIXA DE MENSAGENS */
+const letter = document.getElementById('letter');
+const messageBox = document.getElementById('messageBox');
+const closeMessages = document.getElementById('closeMessages');
+
+letter.addEventListener('click', () => {
+    messageBox.classList.toggle('show');
+    notificationBox.classList.remove('show');
+});
+
+closeMessages.addEventListener('click', () => {
+    messageBox.classList.remove('show');
+});
+
+/* 🔔 CAIXA DE NOTIFICAÇÕES */
+const not = document.getElementById('not');
+const notificationBox = document.getElementById('notificationBox');
+const closeNotifications = document.getElementById('closeNotifications');
+
+not.addEventListener('click', () => {
+    notificationBox.classList.toggle('show');
+    messageBox.classList.remove('show');
+});
+
+closeNotifications.addEventListener('click', () => {
+    notificationBox.classList.remove('show');
+});
 </script>
-    
-     
-            
+
+<style>
+/* 🔵 CSS ADICIONADO — NÃO ALTERA NADA DO SEU */
+
+/* container padrão das janelas */
+.floating-box {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 260px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: .3s;
+    z-index: 999;
+}
+
+.floating-box.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notification {
+    padding: 10px;
+    background: #eef;
+    border-left: 4px solid #736CED;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.close-btn {
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #736CED;
+}
+</style>
+
 </body>
 </html>
